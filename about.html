@@ -19,118 +19,116 @@
 
 
     <section id="header">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <!-- Logo - Left on mobile, centered on desktop -->
-                    <a class="navbar-brand order-lg-1" href="./">
-                        <img src="assets/img/logo.png" alt="Clinic Logo" class="img-fluid">
-                    </a>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Logo - Left on mobile, centered on desktop -->
+          <a class="navbar-brand order-lg-1" href="./">
+            <img src="assets/img/logo.png" alt="Clinic Logo" class="img-fluid">
+          </a>
 
-                    <!-- Desktop Left Menu - Hidden on mobile -->
-                    <div class="d-none d-lg-flex order-lg-0">
-                        <ul class="navbar-nav flex-row gap-3">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="./">Home</a>
-                            </li>
-                            <li class="nav-item appointment">
-                                <button class="nav-link btn btn-appointment" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#staticBackdrop">
-                                    Book Appointment!
-                                </button>
-                            </li>
-                        </ul>
-                    </div>
+          <!-- Desktop Left Menu - Hidden on mobile -->
+          <div class="d-none d-lg-flex order-lg-0">
+            <ul class="navbar-nav flex-row gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="./">Home</a>
+              </li>
+              <li class="nav-item appointment">
+                <button class="nav-link btn btn-appointment" type="button" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop">
+                  Book Appointment!
+                </button>
+              </li>
+            </ul>
+          </div>
 
-                    <!-- Desktop Right Menu - Hidden on mobile -->
-                    <div class="d-none d-lg-flex order-lg-2">
-                        <ul class="navbar-nav flex-row gap-3">
-                            <li class="nav-item">
-                                <a class="nav-link" href="about.html">About Us</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Skin</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="skin-treatment.html">Skin Concerns</a></li>
-                                    <li><a class="dropdown-item" href="#">Skin Treatments</a></li>
-                                    <li><a class="dropdown-item" href="#">Medifacials</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hair</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="hair-treatment.html">Hair Invasive</a></li>
-                                    <li><a class="dropdown-item" href="#">Hair Non-Invasive</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Laser</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="laser-treatment.html">Laser Hair Reduction</a>
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Laser Skin Treatment</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Mobile Menu Button - Right side -->
-                    <button class="navbar-toggler order-lg-3 ms-auto" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </nav>
-        </div>
-
-        <!-- Mobile Offcanvas Menu -->
-        <div class="offcanvas offcanvas-end glass-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-                <ul class="navbar-nav gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="./">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Skin</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="skin-treatment.html">Skin Concerns</a></li>
-                            <li><a class="dropdown-item" href="#">Skin Treatments</a></li>
-                            <li><a class="dropdown-item" href="#">Medifacials</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hair</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="hair-treatment.html">Hair Invasive</a></li>
-                            <li><a class="dropdown-item" href="#">Hair Non-Invasive</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Laser</a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="laser-treatment.html">Laser Hair Reduction</a></li>
-                            <li><a class="dropdown-item" href="#">Laser Skin Treatment</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <button class="nav-link btn btn-appointment w-100" type="button" data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop">
-                            Book Appointment Now!
-                        </button>
-                    </li>
+          <!-- Desktop Right Menu - Hidden on mobile -->
+          <div class="d-none d-lg-flex order-lg-2">
+            <ul class="navbar-nav flex-row gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Skin</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="skin-treatment.html">Skin Concerns</a></li>
+                  <li><a class="dropdown-item" href="#">Skin Treatments</a></li>
+                  <li><a class="dropdown-item" href="#">Medifacials</a></li>
                 </ul>
-            </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hair</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="hair-treatment.html">Hair Invasive</a></li>
+                  <li><a class="dropdown-item" href="#">Hair Non-Invasive</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Laser</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="laser-treatment.html">Laser Hair Reduction</a></li>
+                  <li><a class="dropdown-item" href="#">Laser Skin Treatment</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile Menu Button - Right side -->
+          <button class="navbar-toggler order-lg-3 ms-auto" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
         </div>
-    </section>
+      </nav>
+    </div>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end glass-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="./">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Skin</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="skin-treatment.html">Skin Concerns</a></li>
+              <li><a class="dropdown-item" href="#">Skin Treatments</a></li>
+              <li><a class="dropdown-item" href="#">Medifacials</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hair</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="hair-treatment.html">Hair Invasive</a></li>
+              <li><a class="dropdown-item" href="#">Hair Non-Invasive</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Laser</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="laser-treatment.html">Laser Hair Reduction</a></li>
+              <li><a class="dropdown-item" href="#">Laser Skin Treatment</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link btn btn-appointment w-100" type="button" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">
+              Book Appointment Now!
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
 
 

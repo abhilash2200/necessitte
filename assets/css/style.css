@@ -103,21 +103,15 @@
   z-index: 2;
 }
 
-.faq::after {
-  content: '';
+.bg-faq {
   position: absolute;
-  bottom: -16%;
-  right: 0%;
-  width: 500px;
-  height: 500px;
-  background-image: url(../img/leacs.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: bottom right;
+  right: 0;
+  bottom: 0;
   z-index: 1;
-  pointer-events: none;
 }
 
+
+/* Base Navbar Styles */
 .navbar {
   max-width: 70%;
   background: rgb(0 0 0 / 69%);
@@ -158,13 +152,6 @@
   font-weight: 600;
 }
 
-.testimonial {
-  text-align: center;
-  color: #fff;
-  padding: 0px 20px;
-
-}
-
 /* Logo Styling */
 .navbar-brand img {
   max-height: 80px;
@@ -193,7 +180,6 @@
 
 .btn-appointment:hover {
   background-color: #f8f9fa;
-  /* transform: translateY(-2px); */
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
 }
 
@@ -201,48 +187,12 @@
   padding: 7px 20px !important;
 }
 
-.dropdown-menu li a:hover::before {
-  content: '';
-  background-image: url(../img/lotus.webp);
-  background-position: center;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 10px;
-  /* Start at the left */
-  top: 50%;
-  transform: translateY(-50%);
-  /* Vertically center */
-  width: 20px;
-  height: 25px;
-  font-size: 14px;
-
-}
-
-.dropdown-menu li a:hover {
-  padding-left: 40px;
-  transition: all .3s
-}
-
-.dropdown-menu li a {
-
-  transition: all .3s
-}
-
-.dropdown-menu li a {
-  position: relative;
-  /* Required for positioning ::before */
-  display: inline-block;
-  transition: all 0.3s;
-}
-
-/* Dropdown Menu Styling */
+/* Desktop Dropdown Menu Styling */
 .dropdown-menu {
   background: rgba(0, 0, 0, 0.7);
   backdrop-filter: blur(5px);
   border: none;
   border-radius: 8px;
-
-
 }
 
 .dropdown-item {
@@ -253,213 +203,6 @@
 
 .dropdown-item:hover {
   background-color: rgba(255, 255, 255, 0.1);
-  width: 100%;
-}
-
-/* Glass Morphism Offcanvas Menu */
-.glass-menu {
-  background: rgba(0, 0, 0, 0.267) !important;
-  /* Base color with transparency */
-  backdrop-filter: blur(12px) !important;
-  -webkit-backdrop-filter: blur(12px) !important;
-  border-left: 1px solid rgba(255, 255, 255, 0.2) !important;
-}
-
-.glass-menu .offcanvas-header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 1rem;
-}
-
-.glass-menu .offcanvas-title {
-  color: white;
-  font-weight: 600;
-  font-size: 1.5rem;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.glass-menu .nav-link {
-  color: white !important;
-  padding: 0.75rem 1rem !important;
-  margin: 0.25rem 0;
-  border-radius: 8px;
-  transition: all 0.3s ease;
-  font-weight: 500;
-}
-
-.glass-menu .nav-link:hover,
-.glass-menu .nav-link:focus {
-  background: rgba(255, 255, 255, 0.15);
-  transform: translateX(4px);
-}
-
-.glass-menu .nav-link.active {
-  background: rgba(255, 255, 255, 0.25);
-  font-weight: 600;
-}
-
-/* Enhanced Offcanvas Dropdown UI */
-.glass-menu .dropdown-toggle {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding-right: 2rem !important;
-}
-
-.glass-menu .dropdown-toggle::after {
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: transform 0.3s ease;
-  border-width: 0 2px 2px 0;
-  border-color: white;
-  width: 8px;
-  height: 8px;
-  transform-origin: 75% 50%;
-}
-
-.glass-menu .dropdown-toggle[aria-expanded="true"]::after {
-  transform: translateY(-50%) rotate(-135deg);
-}
-
-.glass-menu .dropdown-menu {
-  background: rgba(0, 0, 0, 0.4) !important;
-  backdrop-filter: blur(15px) !important;
-  -webkit-backdrop-filter: blur(15px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
-  margin: 0.5rem 0 0 1rem !important;
-  border-radius: 6px !important;
-  overflow: hidden;
-  transform-origin: top;
-  animation: dropdownFadeIn 0.3s ease-out forwards;
-  opacity: 0;
-  transform: scaleY(0.8);
-}
-
-@keyframes dropdownFadeIn {
-  to {
-    opacity: 1;
-    transform: scaleY(1);
-  }
-}
-
-
-.glass-menu .dropdown-item {
-  padding: 0.8rem 1.5rem !important;
-  position: relative;
-  transition: all 0.25s ease;
-  border-left: 3px solid transparent;
-}
-
-.glass-menu .dropdown-item:hover,
-.glass-menu .dropdown-item:focus {
-  background: rgba(255, 255, 255, 0.15) !important;
-  border-left: 3px solid rgba(255, 255, 255, 0.4);
-  padding-left: 1.8rem !important;
-}
-
-.glass-menu .dropdown-item:active {
-  background: rgba(255, 255, 255, 0.25) !important;
-}
-
-.glass-menu .dropdown-divider {
-  border-color: rgba(255, 255, 255, 0.1);
-  margin: 0.25rem 0;
-}
-
-/* Nested dropdown indicator */
-.glass-menu .dropdown-item.has-children {
-  position: relative;
-  padding-right: 2.5rem !important;
-}
-
-.glass-menu .dropdown-item.has-children::after {
-  content: "→";
-  position: absolute;
-  right: 1rem;
-  top: 50%;
-  transform: translateY(-50%);
-  opacity: 0.7;
-  font-size: 1rem;
-}
-
-/* Improved dropdown positioning */
-.dropdown-menu-end {
-  right: 0;
-  left: auto !important;
-}
-
-/* Mobile-specific dropdown improvements */
-@media (max-width: 992px) {
-  .glass-menu .dropdown-menu {
-    margin-left: 0.5rem !important;
-    width: calc(100% - 1rem);
-  }
-
-  .glass-menu .dropdown-item {
-    padding: 0.7rem 1.25rem !important;
-  }
-
-  .glass-menu .dropdown-item:hover {
-    padding-left: 1.5rem !important;
-  }
-}
-
-/* Enhanced Appointment Button in Menu */
-.glass-menu .btn-appointment {
-  background: rgba(255, 255, 255, 0.9) !important;
-  color: #6C7D53 !important;
-  font-weight: 600;
-  margin-top: 1rem;
-  padding: 0.75rem !important;
-  border: none;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease;
-}
-
-.glass-menu .btn-appointment:hover {
-  background: white !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2) !important;
-}
-
-/* Smooth open/close animation */
-.offcanvas {
-  transition: transform 0.3s ease-in-out, backdrop-filter 0.3s ease !important;
-}
-
-/* Mobile Styles */
-@media (max-width: 992px) {
-  .navbar {
-    max-width: 100%;
-    border-radius: 0;
-    top: 0;
-    backdrop-filter: none;
-    background-color: #6C7D53;
-    padding: 0px !important;
-  }
-
-  .navbar-brand {
-    margin-right: auto;
-    /* Push logo to left */
-  }
-
-  .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.5);
-    margin-left: auto;
-    /* Push button to right */
-  }
-
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-  }
-
-  .btn-appointment {
-    width: 100%;
-    justify-content: center;
-    margin-top: 0.5rem;
-  }
 }
 
 /* Desktop Layout */
@@ -481,7 +224,6 @@
     width: 50%;
     justify-content: flex-end;
     padding-right: 180px;
-    /* Adjust based on logo width */
   }
 
   /* Right menu */
@@ -489,8 +231,246 @@
     width: 50%;
     justify-content: flex-start;
     padding-left: 180px;
-    /* Adjust based on logo width */
   }
+
+  /* Special hover effects for desktop */
+  .dropdown-menu li a:hover::before {
+    content: '';
+    background-image: url(../img/lotus.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 25px;
+    font-size: 14px;
+  }
+
+  .dropdown-menu li a:hover {
+    padding-left: 40px;
+    transition: all .3s
+  }
+
+  .dropdown-menu li a {
+    transition: all .3s;
+    position: relative;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 992px) {
+  .navbar {
+    max-width: 100%;
+    border-radius: 0;
+    top: 0;
+    backdrop-filter: none;
+    background-color: #6C7D53;
+    padding: 0rem 1rem !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-brand {
+    margin-right: auto;
+    padding: 0.5rem 0;
+  }
+
+  .navbar-brand img {
+    max-height: 55px;
+    transition: transform 0.2s ease;
+  }
+
+  .navbar-brand:active img {
+    transform: scale(0.95);
+  }
+
+  .navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+    margin-left: auto;
+    transition: transform 0.2s ease;
+  }
+
+  .navbar-toggler:active {
+    transform: scale(0.9);
+  }
+
+  .navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+  }
+
+  .navbar-toggler-icon {
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    transition: opacity 0.2s ease;
+  }
+
+  /* Mobile Offcanvas Menu */
+  .offcanvas {
+    background-color: #000000bd !important;
+    max-width: 90%;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    backdrop-filter: blur(5px);
+  }
+
+  .offcanvas-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 1rem 1.25rem;
+  }
+
+  .offcanvas-title {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+
+  .btn-close {
+    filter: invert(1);
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    width: 1.2em;
+    height: 1.2em;
+  }
+
+  .btn-close:hover {
+    opacity: 1;
+  }
+
+  /* Mobile Menu Items */
+  .glass-menu .nav-link {
+    padding: 1rem 1rem !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.25s ease;
+  }
+
+  .glass-menu .nav-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+
+  /* Improved Dropdown Indicators */
+  .glass-menu .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+
+  .glass-menu .dropdown-toggle::after {
+    content: '';
+    background-image: url(../img/lotus.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 0.5rem;
+    transition: transform 0.3s ease;
+  }
+
+  .dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border: none !important;
+}
+
+  .glass-menu .dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+  }
+
+
+  /* Enhanced Dropdown Menu */
+  .glass-menu .dropdown-menu {
+    background: rgba(0, 0, 0, 0.15) !important;
+    border: none;
+    margin: 0 !important;
+    padding: 0.25rem 0;
+    border-radius: 0;
+  }
+
+  .glass-menu .dropdown-item {
+    padding: 0.85rem 1.25rem 0.85rem 2.25rem !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 0.95rem;
+    position: relative;
+    transition: all 0.2s ease;
+  }
+
+  .glass-menu .dropdown-item::before {
+    content: "";
+    position: absolute;
+    left: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    transition: all 0.2s ease;
+  }
+
+  .glass-menu .dropdown-item:hover {
+    background: rgba(255, 255, 255, 0.1) !important;
+    padding-left: 2.5rem !important;
+  }
+
+  .glass-menu .dropdown-item:hover::before {
+    background: white;
+    transform: translateY(-50%) scale(1.2);
+  }
+
+  .glass-menu .dropdown-divider {
+    border-color: rgba(255, 255, 255, 0.1);
+    margin: 0.25rem 0;
+  }
+
+  /* Appointment Button */
+  .glass-menu .btn-appointment {
+    margin: 0;
+    padding: 0.9rem !important;
+    font-weight: 600;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.95) !important;
+    color: #6C7D53 !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  }
+
+  .glass-menu .btn-appointment:hover {
+    background: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Active State Indicators */
+  .glass-menu .nav-link.active {
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  /* Focus States for Accessibility */
+  .glass-menu .nav-link:focus,
+  .glass-menu .dropdown-item:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.3);
+    outline-offset: -2px;
+  }
+}
+
+/* Transition effects */
+.navbar,
+.navbar .dropdown-toggle,
+.navbar-nav .nav-link,
+.dropdown-menu,
+.dropdown-item {
+  transition: all 0.3s ease;
 }
 
 #nec {
@@ -685,6 +665,11 @@ p {
 
 .accordion-item {
   margin-bottom: 20px;
+}
+
+.accordion-item {
+  z-index: 2;
+  position: relative;
 }
 
 .accordion-button:not(.collapsed) {
@@ -1590,9 +1575,10 @@ h6 {
 
 }
 
-/* .sticky-footer-icons {
+.sticky-footer-icons {
   display: none;
-} */
+}
+
 /* .shine-button {
   
     display: inline-block;
@@ -1606,32 +1592,32 @@ h6 {
     background-image: linear-gradient(to right, rgba(255, 255, 255, .2), rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
    
 } */
-  .contact-icons {
-    position: fixed;
-    top: 50%;
-    right: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    z-index: 999;
-  }
+.contact-icons {
+  position: fixed;
+  top: 40%;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 999;
+}
 
-  .contact-icons .icon {
-    padding: 15px;
-    border-radius: 50%;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    box-shadow: white 0px 0px 3px;
-  }
+.contact-icons .icon {
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  box-shadow: white 0px 0px 3px;
+}
 
-  .contact-icons .whatsapp {
-    background-color: #6C7D53;
-  }
+.contact-icons .whatsapp {
+  background-color: #6C7D53;
+}
 
-  .contact-icons .phone {
-    background-color: #6C7D53;
-  }
+.contact-icons .phone {
+  background-color: #6C7D53;
+}
 
 @media (min-width: 1200px) and (max-width: 1400px) {
   .bannerw {
@@ -1807,12 +1793,16 @@ h6 {
   }
 
   .sticky-footer-icons {
+    display: block;
+  }
+
+  .sticky-footer-icons {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
     background-color: #f5f5dc;
-    padding: 8px 0;
+    padding: 0px;
     box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
     z-index: 1000;
   }
@@ -1823,6 +1813,12 @@ h6 {
     align-items: center;
     max-width: 600px;
     margin: 0 auto;
+  }
+
+  .footer-icons-wrap a {
+    text-decoration: none;
+    color: inherit;
+    border-right: 1px solid #ccc;
   }
 
   .footer-btn {
@@ -1854,7 +1850,7 @@ h6 {
     /* Turns icon white */
   }
 
- 
+
 }
 
 /* Hide on mobile */
@@ -1863,16 +1859,16 @@ h6 {
     display: none;
   }
 
-    .about::before {
-      content: '';
-      bottom: -43%;
-    }
-
-    .abhg {
-      margin-top: 30px;
-    }
+  .about::before {
+    content: '';
+    bottom: -43%;
   }
 
-  .pop-text {
-    color: #004211;
+  .abhg {
+    margin-top: 30px;
   }
+}
+
+.pop-text {
+  color: #004211;
+}

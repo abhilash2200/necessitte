@@ -1,0 +1,477 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Necessitte</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/owl.carousel.min.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <section id="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Logo - Left on mobile, centered on desktop -->
+          <a class="navbar-brand order-lg-1" href="./">
+            <img src="assets/img/logo.png" alt="Clinic Logo" class="img-fluid">
+          </a>
+
+          <!-- Desktop Left Menu - Hidden on mobile -->
+          <div class="d-none d-lg-flex order-lg-0">
+            <ul class="navbar-nav flex-row gap-3">
+              <li class="nav-item">
+                <a class="nav-link active" href="./">Home</a>
+              </li>
+              <li class="nav-item appointment">
+                <button class="nav-link btn btn-appointment" type="button" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop">
+                  Book Appointment!
+                </button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Desktop Right Menu - Hidden on mobile -->
+          <div class="d-none d-lg-flex order-lg-2">
+            <ul class="navbar-nav flex-row gap-3">
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Skin</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="skin-treatment.html">Skin Concerns</a></li>
+                  <li><a class="dropdown-item" href="#">Skin Treatments</a></li>
+                  <li><a class="dropdown-item" href="#">Medifacials</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hair</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="hair-treatment.html">Hair Invasive</a></li>
+                  <li><a class="dropdown-item" href="#">Hair Non-Invasive</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Laser</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="laser-treatment.html">Laser Hair Reduction</a></li>
+                  <li><a class="dropdown-item" href="#">Laser Skin Treatment</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mobile Menu Button - Right side -->
+          <button class="navbar-toggler order-lg-3 ms-auto" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Mobile Offcanvas Menu -->
+    <div class="offcanvas offcanvas-end glass-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="./">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Skin</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="skin-treatment.html">Skin Concerns</a></li>
+              <li><a class="dropdown-item" href="#">Skin Treatments</a></li>
+              <li><a class="dropdown-item" href="#">Medifacials</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hair</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="hair-treatment.html">Hair Invasive</a></li>
+              <li><a class="dropdown-item" href="#">Hair Non-Invasive</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Laser</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="laser-treatment.html">Laser Hair Reduction</a></li>
+              <li><a class="dropdown-item" href="#">Laser Skin Treatment</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link btn btn-appointment w-100" type="button" data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop">
+              Book Appointment Now!
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+
+    <section class="contac-bg">
+        <div class="container">
+            <h1 id="contct">Privacy Policy</h1>
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html" style="color: #fff;">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">privacy-policy</li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section id="privacy-policy" style="padding: 50px 20px; background: #f9f9f9;">
+        <div style="max-width: 900px; margin: 0 auto;">
+
+            <!-- Heading -->
+            <h2 style="text-align: center; font-weight: 700; margin-bottom: 10px; color: #222;">
+                Privacy Policy – Necessitte Aesthetic Studio
+            </h2>
+            <p style="text-align: center; color: #555; font-size: 16px; margin-bottom: 30px;">
+                Your privacy is important to us, and we are committed to protecting your personal information.
+            </p>
+
+            <!-- Intro -->
+            <p style="color: #333; line-height: 1.6; font-size: 15px;">
+                At <strong>Necessitte Aesthetic Studio</strong>, we value your privacy and are committed to protecting
+                any personal information you share with us.
+                This Privacy Policy explains how we collect, use, and safeguard your data when you visit our website
+                <a href="https://www.necessitee.in" style="color: #6C7D53; text-decoration: none;">www.necessitee.in</a>
+                or use our services.
+            </p>
+
+            <p style="color: #333; line-height: 1.6; font-size: 15px;">
+                We may update this Privacy Policy periodically to reflect changes in our practices or for other
+                operational, legal, or regulatory reasons.
+                Please review this page regularly to stay informed about any updates.
+                Your continued use of the Site after any modifications will be deemed as your acknowledgment and
+                acceptance of the updated policy.
+            </p>
+
+
+            <!-- Information We Collect -->
+            <h6 style="margin-top: 20px; color: #111;">Information We Collect</h6>
+            <p style="color: #333; line-height: 1.6;">We may collect personally identifiable information when you:</p>
+            <ul style="padding-left: 20px; color: #222; line-height: 1.8;">
+                <li style="color: #111;">Book an appointment</li>
+                <li style="color: #111;">Sign up for newsletters or promotions</li>
+                <li style="color: #111;">Fill out a contact form or feedback survey</li>
+                <li style="color: #111;">Participate in contests or giveaways</li>
+                <li style="color: #111;">Contact us via phone, email, or the website</li>
+            </ul>
+            <p style="color: #333; line-height: 1.6;">
+                This may include your name, email address, phone number, postal address, service preferences, and any
+                details you voluntarily provide.
+            </p>
+
+            <!-- How We Use -->
+            <h6 style="margin-top: 10px; color: #111;">How We Use Your Information</h6>
+            <p style="color: #333; line-height: 1.6;">We use your personal information to:</p>
+            <ul style="padding-left: 20px; color: #222; line-height: 1.8;">
+                <li style="color: #111;">Schedule and manage appointments</li>
+                <li style="color: #111;">Send appointment reminders or follow-ups</li>
+                <li style="color: #111;">Respond to inquiries and provide customer support</li>
+                <li style="color: #111;">Improve our services and personalize your experience</li>
+                <li style="color: #111;">Send promotional emails or offers (only if you opt-in)</li>
+                <li style="color: #111;">Manage contests or special events</li>
+                <li style="color: #111;">Conduct internal business analysis and research</li>
+            </ul>
+            <p style="color: #333; line-height: 1.6;">
+                We may share your information with trusted third-party service providers who agree to keep your data
+                confidential.
+            </p>
+
+            <!-- Children Privacy -->
+            <h6 style="margin-top: 10px; color: #111;">Children’s Privacy</h6>
+            <p style="color: #333; line-height: 1.6;">
+                Our services are not intended for children under the age of 13. We do not knowingly collect personal
+                information from minors. If you believe a child has provided us with their information, please contact
+                us and we will promptly remove it.
+            </p>
+
+            <!-- Security -->
+            <h6 style="margin-top: 10px; color: #111;">Security</h6>
+            <p style="color: #333; line-height: 1.6;">
+                We take appropriate physical, electronic, and managerial measures to safeguard and secure the
+                information we collect online.
+            </p>
+
+            <!-- Cookies -->
+            <h6 style="margin-top: 10px; color: #111;">Cookies</h6>
+            <p style="color: #333; line-height: 1.6;">
+                We use cookies to enhance your experience on our website. They help us analyze site traffic, understand
+                user behavior, and improve functionality.
+                You can accept or decline cookies via your browser settings, but some features may not work properly if
+                disabled.
+            </p>
+
+            <!-- Consent -->
+            <h6 style="margin-top: 10px; color: #111;">Your Consent</h6>
+            <p style="color: #333; line-height: 1.6;">
+                By using this website, you consent to the collection and use of your information as described in this
+                Privacy Policy.
+            </p>
+
+            <!-- Contact -->
+            <h6 style="margin-top: 10px; color: #111;">Contact Us</h6>
+            <p style="color: #333; line-height: 1.6;">
+                If you have any questions about this Privacy Policy or how we handle your data, please reach out to us:
+            </p>
+            <div
+                style="padding: 15px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); color: #222; font-size: 15px;">
+                <strong>Necessitte Aesthetic Studio</strong><br>
+                F-138, Spaze Corporate Park, Sector 69,<br>
+                Gurugram - 122006, Haryana<br>
+                <a href="mailto:info@necessitee.in"
+                    style="color: #6C7D53; text-decoration: none;">info@necessitee.in</a><br>
+                <a href="tel:+919667913725" style="color: #6C7D53; text-decoration: none;">+91 9667913725</a>
+            </div>
+
+            <!-- Last Updated -->
+            <p style="text-align: center; margin-top: 20px; color: #666; font-size: 14px;">
+                Last updated: July 2025
+            </p>
+        </div>
+    </section>
+
+
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-12">
+                    <div class="footrd">
+                        <h3>About us</h3>
+                        <p>
+                            At Necessitee Aesthetics, your skin is the spark to our heart. We care for your skin by
+                            combining the
+                            latest FDA-approved technology with real care. Self-care is a necessity for you through our
+                            tailored
+                            treatments to restore your glow. Feel seen, supported, and transformed with heart in our
+                            genuine clinic.
+                            Let’s find your confidence, together - one glowing session at a time. Contact us now.
+                        </p>
+                        <h5 class="reda"><a href="about.html" style="color:#fff;">Read More <img
+                                    src="assets/img/arrow.png" alt="arrow"></a></h5>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12">
+                    <div class="footrd">
+                        <h3>Our Services</h3>
+                        <div class="">
+                            <ul>
+                                <a href="skin-treatment.html">
+                                    <li>Skin</li>
+                                </a>
+                                <a href="hair-treatment.html">
+                                    <li>Hair</li>
+                                </a>
+                                <a href="laser-treatment.html">
+                                    <li>Laser </li>
+                                </a>
+                            </ul>
+                        </div>
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <a href="gallery.html">
+                                <li>Gallery</li>
+                            </a>
+                            <a href="contact-us.html">
+                                <li>Contact Us</li>
+                            </a>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-12">
+                    <h3>Contact Us</h3>
+                    <div class="d-flex mt-3">
+                        <img src="assets/img/location1.png" alt="" class="me-2 imhg">
+                        <p id="btd">F-138, Spaze Corporate Parkk, Sector 69,<br>
+                            Gurugram - 122006, Haryana.</p>
+                    </div>
+                    <div class="d-flex mt-2">
+                        <img src="assets/img/call-calling1.png" alt="" class="me-2 imhg">
+                        <a href="tel:+919667913725" class="rishra">
+                            <p id="btd">+91 9667913725</p>
+                        </a>
+                    </div>
+                    <div class="d-flex mt-2">
+                        <img src="assets/img/sms-notification1.png" alt="" class="me-2 imhg">
+                        <a href="mailto:info@necessitee.in" class="rishra">
+                            <p id="btd">info@necessitee.in</p>
+                        </a>
+                    </div>
+                    <div class="social">
+                        <h3>Social Links</h3>
+                        <span><a href=""><img src="assets/img/facebook.png" width="27px" height="27px"
+                                    alt="facebook"></a></span>
+                        <span><a href=""><img src="assets/img/whatsapp.png" width="27px" height="27px"
+                                    alt="linkedin"></a></span>
+                        <span><a href=""><img src="assets/img/twiitter.png" width="27px" height="27px"
+                                    alt="youtube"></a></span>
+                        <span><a href=""><img src="assets/img/instagram.png" width="27px" height="27px"
+                                    alt="instagram"></a></span>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copy">
+                ©
+                Copyright @
+                <script>document.write(new Date().getFullYear())</script> • All rights reserved - <a
+                    href="privacy-policy.html" style="color: #fff;">Privacy Policy</a>
+            </p>
+        </div>
+    </section>
+
+
+    <aside class="contact-icons">
+        <!-- WhatsApp Link -->
+        <a href="https://wa.me/918888888888" target="_blank" title="Chat on WhatsApp" class="icon whatsapp">
+            <i class="fab fa-whatsapp fa-lg"></i>
+        </a>
+
+        <!-- Phone Call Link -->
+        <a href="tel:+918888888888" title="Call Us" class="icon phone">
+            <i class="fas fa-phone"></i>
+        </a>
+    </aside>
+
+
+    <!-- Sticky Footer -->
+    <div class="sticky-footer-icons">
+        <div class="footer-icons-wrap">
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/918888888888" target="_blank" title="WhatsApp" class="footer-btn">
+                <img src="assets/img/whatsapp1.png" alt="WhatsApp">
+            </a>
+
+            <!-- Call -->
+            <a href="tel:+918888888888" title="Call" class="footer-btn">
+                <img src="assets/img/call.png" alt="Call">
+            </a>
+
+            <!-- Book Appointment (Triggers Modal) -->
+            <button type="button" title="Book Appointment" class="footer-btn" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                <img src="assets/img/direct.png" alt="Message">
+            </button>
+
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content shadow-lg" style="max-width: 1400px;">
+                <div class="modal-body p-0 bg-white position-relative"
+                    style="background: linear-gradient(0deg, rgba(255, 255, 244, 1) 0%, rgba(231, 251, 202, 1) 80%);">
+
+                    <!-- Close Button (custom black) -->
+                    <button type="button" class="btn-close custom-close position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    <div class="row g-0">
+
+                        <!-- Left Image Section -->
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <img src="./assets/img/popimg.webp" alt="Banner"
+                                class="img-fluid h-100 w-100 object-fit-cover">
+                        </div>
+
+                        <!-- Right Form Section -->
+                        <div class="col-lg-6 d-flex flex-column">
+
+                            <!-- Heading -->
+                            <div class="text-center py-4">
+                                <h2 class="mt-3 mb-0 fs-2 fw-bold">
+                                    Your Aesthetic Journey Awaits!
+                                </h2>
+                            </div>
+
+                            <!-- Form Body -->
+                            <div class="px-4 py-5 flex-grow-1 d-flex align-items-center position-relative">
+                                <form class="w-100 z-1">
+                                    <div class="row g-3">
+
+                                        <div class="col-12">
+                                            <input type="text" class="form-control border rounded-3 shadow-sm py-2"
+                                                placeholder="Name" required>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <input type="text" class="form-control border rounded-3 shadow-sm py-2"
+                                                placeholder="Phone Number" pattern="[6-9][0-9]{9}" required>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <input type="email" class="form-control border rounded-3 shadow-sm py-2"
+                                                placeholder="Email" required>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <select class="form-select rounded-3 shadow-sm py-2" required>
+                                                <option selected value="">Concern</option>
+                                                <option value="Hair">Hair</option>
+                                                <option value="Skin">Skin</option>
+                                                <option value="Laser">Laser</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <textarea class="form-control border rounded-3 shadow-sm py-2" rows="2"
+                                                placeholder="Message" required></textarea>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button type="submit" class="view-btn w-100">Step Into Beauty</button>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/js/all.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</body>
+
+</html>
