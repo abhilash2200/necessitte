@@ -17,117 +17,119 @@
 
 <body>
 
-      <section id="header">
-    <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <!-- Logo - Left on mobile, centered on desktop -->
-          <a class="navbar-brand order-lg-1" href="./">
-            <img src="assets/img/logo.png" alt="Clinic Logo" class="img-fluid">
-          </a>
+    <section id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <!-- Logo - Left on mobile, centered on desktop -->
+                    <a class="navbar-brand order-lg-1" href="./">
+                        <img src="assets/img/logo.png" alt="Clinic Logo" class="img-fluid">
+                    </a>
 
-          <!-- Desktop Left Menu - Hidden on mobile -->
-          <div class="d-none d-lg-flex order-lg-0">
-            <ul class="navbar-nav flex-row gap-3">
-              <li class="nav-item">
-                <a class="nav-link active" href="./">Home</a>
-              </li>
-              <li class="nav-item appointment">
-                <button class="nav-link btn btn-appointment" type="button" data-bs-toggle="modal"
-                  data-bs-target="#staticBackdrop">
-                  Book Appointment!
-                </button>
-              </li>
-            </ul>
-          </div>
+                    <!-- Desktop Left Menu - Hidden on mobile -->
+                    <div class="d-none d-lg-flex order-lg-0">
+                        <ul class="navbar-nav flex-row gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./">Home</a>
+                            </li>
+                            <li class="nav-item appointment">
+                                <button class="nav-link btn btn-appointment" type="button" data-bs-toggle="modal"
+                                    data-bs-target="#staticBackdrop">
+                                    Book Appointment!
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
 
-          <!-- Desktop Right Menu - Hidden on mobile -->
-          <div class="d-none d-lg-flex order-lg-2">
-            <ul class="navbar-nav flex-row gap-3">
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Skin</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="skin-treatment.html">Skin Concerns</a></li>
-                  <li><a class="dropdown-item" href="#">Skin Treatments</a></li>
-                  <li><a class="dropdown-item" href="#">Medifacials</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hair</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="hair-treatment.html">Hair Invasive</a></li>
-                  <li><a class="dropdown-item" href="#">Hair Non-Invasive</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Laser</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="laser-treatment.html">Laser Hair Reduction</a></li>
-                  <li><a class="dropdown-item" href="#">Laser Skin Treatment</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
+                    <!-- Desktop Right Menu - Hidden on mobile -->
+                    <div class="d-none d-lg-flex order-lg-2">
+                        <ul class="navbar-nav flex-row gap-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Skin</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="skin-treatment.html">Skin Concerns</a></li>
+                                    <li><a class="dropdown-item" href="#">Skin Treatments</a></li>
+                                    <li><a class="dropdown-item" href="#">Medifacials</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hair</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="hair-treatment.html">Hair Invasive</a></li>
+                                    <li><a class="dropdown-item" href="#">Hair Non-Invasive</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Laser</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="laser-treatment.html">Laser Hair Reduction</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Laser Skin Treatment</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
 
-          <!-- Mobile Menu Button - Right side -->
-          <button class="navbar-toggler order-lg-3 ms-auto" type="button" data-bs-toggle="offcanvas"
-            data-bs-target="#mobileMenu" aria-controls="mobileMenu">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+                    <!-- Mobile Menu Button - Right side -->
+                    <button class="navbar-toggler order-lg-3 ms-auto" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </nav>
         </div>
-      </nav>
-    </div>
 
-    <!-- Mobile Offcanvas Menu -->
-    <div class="offcanvas offcanvas-end glass-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav gap-3">
-          <li class="nav-item">
-            <a class="nav-link" href="./">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
+        <!-- Mobile Offcanvas Menu -->
+        <div class="offcanvas offcanvas-end glass-menu" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileMenuLabel">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Skin</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="skin-treatment.html">Skin Concerns</a></li>
-              <li><a class="dropdown-item" href="#">Skin Treatments</a></li>
-              <li><a class="dropdown-item" href="#">Medifacials</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hair</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="hair-treatment.html">Hair Invasive</a></li>
-              <li><a class="dropdown-item" href="#">Hair Non-Invasive</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Laser</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="laser-treatment.html">Laser Hair Reduction</a></li>
-              <li><a class="dropdown-item" href="#">Laser Skin Treatment</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link btn btn-appointment w-100" type="button" data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop">
-              Book Appointment Now!
-            </button>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </section>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Skin</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="skin-treatment.html">Skin Concerns</a></li>
+                            <li><a class="dropdown-item" href="#">Skin Treatments</a></li>
+                            <li><a class="dropdown-item" href="#">Medifacials</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Hair</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="hair-treatment.html">Hair Invasive</a></li>
+                            <li><a class="dropdown-item" href="#">Hair Non-Invasive</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Laser</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="laser-treatment.html">Laser Hair Reduction</a></li>
+                            <li><a class="dropdown-item" href="#">Laser Skin Treatment</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-appointment w-100" type="button" data-bs-toggle="modal"
+                            data-bs-target="#staticBackdrop">
+                            Book Appointment Now!
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
     <section class="contac-bg mb">
         <div class="container">
@@ -148,7 +150,11 @@
                 <h4 class="science">No More Unwanted Hair</h4>
             </div>
             <p class="text-center">
-                Unwanted hair may leave you lacking confidence, and we believe it at Necessitee Aesthetics. In our cosy Gurugram clinic, we design life-changing laser hair reduction treatments that break the cycle of temporary solutions. Our methodology combines the latest technology with caring attention to provide silky-smooth, shining skin that speaks to your inner radiance, regaining long-term freedom and confidence.
+                Unwanted hair may leave you lacking confidence, and we believe it at Necessitee Aesthetics. In our cosy
+                Gurugram clinic, we design life-changing laser hair reduction treatments that break the cycle of
+                temporary solutions. Our methodology combines the latest technology with caring attention to provide
+                silky-smooth, shining skin that speaks to your inner radiance, regaining long-term freedom and
+                confidence.
             </p>
         </div>
     </section>
@@ -193,13 +199,15 @@
                                     Follicle Targeting</h6>
                                 <div class="grn-box">
                                     <p class="priv"><b>Principle:</b></p>
-                                    <p>We precisely target hair follicles to deliver long-lasting smoothness without damaging your skin.</p>
+                                    <p>We precisely target hair follicles to deliver long-lasting smoothness without
+                                        damaging your skin.</p>
                                 </div>
                                 <div class="grn-box">
                                     <p class="priv"><b>Technologies & Tools:</b></p>
                                     <div class="mt-3">
                                         <p><b>Soprano Titanium Laser:</b></p>
-                                        <p>Triple-wavelength technology maximises hair reduction at various depths for effective, long-term results.</p>
+                                        <p>Triple-wavelength technology maximises hair reduction at various depths for
+                                            effective, long-term results.</p>
                                     </div>
                                     <div class="mt-3">
                                         <p><b>ICE Plus Cooling System:</b></p>
@@ -207,7 +215,8 @@
                                     </div>
                                     <div class="mt-3">
                                         <p><b>Diode Laser Technology:</b></p>
-                                        <p> Provides fast, accurate pulses for streamlined hair removal on large areas.</p>
+                                        <p> Provides fast, accurate pulses for streamlined hair removal on large areas.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -221,13 +230,15 @@
                                     Comfort Enhancement</h6>
                                 <div class="grn-box">
                                     <p class="priv"><b>Principle:</b></p>
-                                    <p>Confident, healthy skin is a result of smooth, healthy skin that complements hair reduction.</p>
+                                    <p>Confident, healthy skin is a result of smooth, healthy skin that complements hair
+                                        reduction.</p>
                                 </div>
                                 <div class="grn-box">
                                     <p class="priv"><b>Technologies & Tools:</b></p>
                                     <div class="mt-3">
                                         <p><b>Post-Laser Soothing Serums:</b></p>
-                                        <p>Calming botanicals and peptides nourish and shield the skin after treatment.</p>
+                                        <p>Calming botanicals and peptides nourish and shield the skin after treatment.
+                                        </p>
                                     </div>
                                     <div class="mt-3">
                                         <p><b>Hydra-Cool Infusion:</b></p>
@@ -249,17 +260,20 @@
                                     Hair Reduction</h6>
                                 <div class="grn-box">
                                     <p class="priv"><b>Principle:</b></p>
-                                    <p>Hair removal should be efficient for all skin types and lifestyles without compromising functionality.</p>
+                                    <p>Hair removal should be efficient for all skin types and lifestyles without
+                                        compromising functionality.</p>
                                 </div>
                                 <div class="grn-box">
                                     <p class="priv"><b>Technologies & Tools:</b></p>
                                     <div class="mt-3">
                                         <p><b>Multi-Wavelength Laser System:</b></p>
-                                        <p>Has adjustable settings and is safe for all skin types, including tanned skin.</p>
+                                        <p>Has adjustable settings and is safe for all skin types, including tanned
+                                            skin.</p>
                                     </div>
                                     <div class="mt-3">
                                         <p><b>SpeedPulse Technology:</b></p>
-                                        <p>Effectively treats huge areas while cutting down on session time for busy schedules.</p>
+                                        <p>Effectively treats huge areas while cutting down on session time for busy
+                                            schedules.</p>
                                     </div>
                                     <!-- <div class="mt-3">
                                         <p><b>Meso-Glutathione & Peptides:</b></p>
@@ -277,13 +291,15 @@
                                     Hair Synergy</h6>
                                 <div class="grn-box">
                                     <p class="priv"><b>Principle:</b></p>
-                                    <p>Hair loss improves the general health of both skin and hair, giving both a cohesive radiance.</p>
+                                    <p>Hair loss improves the general health of both skin and hair, giving both a
+                                        cohesive radiance.</p>
                                 </div>
                                 <div class="grn-box">
                                     <p class="priv"><b>Technologies & Tools:</b></p>
                                     <div class="mt-3">
                                         <p><b>Complementary Skin Rejuvenation:</b></p>
-                                        <p>Restores skin tone and texture by combining serums with laser hair removal.</p>
+                                        <p>Restores skin tone and texture by combining serums with laser hair removal.
+                                        </p>
                                     </div>
                                     <div class="mt-3">
                                         <p><b>Treatments that Nourish the Scalp:</b></p>
@@ -329,8 +345,7 @@
                                         </div>
                                         <div class="mb-4">
                                             <div class="">
-                                                <button type="submit" class="view-btn"
-                                                    >Step Into
+                                                <button type="submit" class="view-btn">Step Into
                                                     Beauty</button>
                                             </div>
                                         </div>
@@ -362,7 +377,8 @@
                                         Skin Protection</h6>
                                     <div class="grn-box">
                                         <p class="priv"><b>Principle:</b></p>
-                                        <p>Reduce irritation and preserve skin integrity for a comfortable experience.</p>
+                                        <p>Reduce irritation and preserve skin integrity for a comfortable experience.
+                                        </p>
                                     </div>
                                     <div class="grn-box">
                                         <p class="priv"><b>Technologies & Tools:</b></p>
@@ -390,17 +406,20 @@
                                         Driven Hair Analysis</h6>
                                     <div class="grn-box">
                                         <p class="priv"><b>Principle:</b></p>
-                                        <p>For your skin and hair, you require a customised solution rather than a generic one.</p>
+                                        <p>For your skin and hair, you require a customised solution rather than a
+                                            generic one.</p>
                                     </div>
                                     <div class="grn-box">
                                         <p class="priv"><b>Technologies & Tools:</b></p>
                                         <div class="mt-3">
                                             <p><b>Advanced Skin & Hair Imaging:</b></p>
-                                            <p>Determines hair density, skin colour, and sensitivity to create personalised plans.</p>
+                                            <p>Determines hair density, skin colour, and sensitivity to create
+                                                personalised plans.</p>
                                         </div>
                                         <div class="mt-3">
                                             <p><b>Dynamic Treatment Protocols:</b></p>
-                                            <p>Treated on a session-by-session basis based on your skin's response and objectives.</p>
+                                            <p>Treated on a session-by-session basis based on your skin's response and
+                                                objectives.</p>
                                         </div>
                                         <!-- <div class="mt-3">
                                             <p><b>Meso-Glutathione & Peptides:</b></p>
@@ -461,7 +480,7 @@
                                     01
                                 </div>
                                 <h6>Regenerative Aesthetics &<br>
-                                        Collagen Biostimulation</h6>
+                                    Collagen Biostimulation</h6>
                                 <div class="grn-box">
                                     <p class="priv"><b>Principle:</b></p>
                                     <p>We ignite your skin's own renewal, not merely covering up for flaws.</p>
@@ -474,7 +493,8 @@
                                     </div>
                                     <div class="mt-3">
                                         <p><b>Velvet Glow Fractional Resurfacing:</b></p>
-                                        <p>This non-ablative laser technique promotes collagen growth and smoothes scars.</p>
+                                        <p>This non-ablative laser technique promotes collagen growth and smoothes
+                                            scars.</p>
                                     </div>
                                     <div class="mt-3">
                                         <p><b>AuraLift Laser Skin Tightening:</b></p>
@@ -492,7 +512,8 @@
                                     Pigmentation Correction</h6>
                                 <div class="grn-box">
                                     <p class="priv"><b>Principle:</b></p>
-                                    <p>Areas that have been specifically treated regain their brilliant purity and even tone.</p>
+                                    <p>Areas that have been specifically treated regain their brilliant purity and even
+                                        tone.</p>
                                 </div>
                                 <div class="grn-box">
                                     <p class="priv"><b>Technologies & Tools:</b></p>
@@ -520,7 +541,8 @@
                                     Reduction</h6>
                                 <div class="grn-box">
                                     <p class="priv"><b>Principle:</b></p>
-                                    <p>Soothe and clear skin without damaging surrounding tissue for a peaceful complexion.</p>
+                                    <p>Soothe and clear skin without damaging surrounding tissue for a peaceful
+                                        complexion.</p>
                                 </div>
                                 <div class="grn-box">
                                     <p class="priv"><b>Technologies & Tools:</b></p>
@@ -678,9 +700,9 @@
                                             <p>Imported Korean products formulated for layering and customised infusions.</p>
                                         </div>
                                     </div> -->
+                                    </div>
                                 </div>
-                            </div>
-                            <!-- <div class="col-lg-5 col-md-5 col-12 mx-auto">
+                                <!-- <div class="col-lg-5 col-md-5 col-12 mx-auto">
                                 <div class="frd">
                                     <div class="one">
                                         07
@@ -713,283 +735,287 @@
                                     <img src="assets/img/skint.webp" alt="" class="img-fluid">
                                 </div>
                             </div> -->
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-                tabindex="0">
-                <div class="side-green-patta">
-                    <img src="assets/img/side-green-patta.webp" alt="" class="img-fluid">
-                </div>
-                <div class="container">
-                    <h2>Our Fundamental Ideas and Cutting-edge Technologies</h2>
-                    <div class="row">
-                        <div class="col-lg-5 col-md-5 col-12 mx-auto">
-                            <div class="frd">
-                                <div class="one">
-                                    01
-                                </div>
-                                <h6>Skin Revitalisation & <br>
-                                    Cellular Boost</h6>
-                                <div class="grn-box">
-                                    <p class="priv"><b>Principle:</b></p>
-                                    <p>We stimulate your skin's own energy to renew and repair, not simply mask imperfections.</p>
-                                </div>
-                                <div class="grn-box">
-                                    <p class="priv"><b>Technologies & Tools:</b></p>
-                                    <div class="mt-3">
-                                        <p><b>Vita-Pulse Therapy:</b></p>
-                                        <p>Stimulates cell renewal and smoothes blemishes using micro-vibrations.</p>
-                                    </div>
-                                    <div class="mt-3">
-                                        <p><b>Regen-Cell Activators:</b></p>
-                                        <p>Implant bioactive ingredients to restore and revitalise skin.</p>
-                                    </div>
-                                    <div class="mt-3">
-                                        <p><b>Pro-Collagen Serums:</b></p>
-                                        <p>Stimulate elasticity to soften fine lines and revive vitality.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-5 col-12 mx-auto">
-                            <div class="frd">
-                                <div class="one">
-                                    02
-                                </div>
-                                <h6>Moisture Surge &  <br>
-                                    Barrier Restoration</h6>
-                                <div class="grn-box">
-                                    <p class="priv"><b>Principle:</b></p>
-                                    <p>Hydrated skin glows with strength and youth.</p>
-                                </div>
-                                <div class="grn-box">
-                                    <p class="priv"><b>Technologies & Tools:</b></p>
-                                    <div class="mt-3">
-                                        <p><b>Hydra-Flow System:</b></p>
-                                        <p>Provides nutrient-rich water for immediate plumpness and radiance.</p>
-                                    </div>
-                                    <div class="mt-3">
-                                        <p><b>Ceramide Micro-Infusions:</b></p>
-                                        <p>Strengthen the skin barrier with its protective lipids.</p>
-                                    </div>
-                                    <!-- <div class="mt-3">
-                                        <p><b>Meso-Glutathione & Peptides:</b></p>
-                                        <p>Fights oxidative stress and pigmentation for a healthy glow.</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-5 col-12 mx-auto">
-                            <div class="frd">
-                                <div class="one">
-                                    03
-                                </div>
-                                <h6>Precision Tone & <br>
-                                    Clarity Enhancement</h6>
-                                <div class="grn-box">
-                                    <p class="priv"><b>Principle:</b></p>
-                                    <p>Targeted treatments balance tone without disturbing healthy skin.</p>
-                                </div>
-                                <div class="grn-box">
-                                    <p class="priv"><b>Technologies & Tools:</b></p>
-                                    <div class="mt-3">
-                                        <p><b>Prisma-Laser Therapy:</b></p>
-                                        <p>Corrects discolouration and redness with targeted light waves.</p>
-                                    </div>
-                                    <div class="mt-3">
-                                        <p><b>Green Light Calming Therapy:</b></p>
-                                        <p>Calms irritation and evens complexion for clarity.</p>
-                                    </div>
-                                    <!-- <div class="mt-3">
-                                        <p><b>Meso-Glutathione & Peptides:</b></p>
-                                        <p>Fights oxidative stress and pigmentation for a healthy glow.</p>
-                                    </div> -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-5 col-12 mx-auto">
-                            <div class="frd">
-                                <div class="one">
-                                    04
-                                </div>
-                                <h6>Non-Invasive <br>
-                                    Sculpting & Tightening</h6>
-                                <div class="grn-box">
-                                    <p class="priv"><b>Principle:</b></p>
-                                    <p>Restore youthful contours gently, without invasive methods.</p>
-                                </div>
-                                <div class="grn-box">
-                                    <p class="priv"><b>Technologies & Tools:</b></p>
-                                    <div class="mt-3">
-                                        <p><b>Sonic-Sculpt Technology:</b></p>
-                                        <p>Firms and lifts sagging skin by using sonic energy.</p>
-                                    </div>
-                                    <div class="mt-3">
-                                        <p><b>Thermal-Fusion Pads:</b></p>
-                                        <p>Promote collagen for a more youthful, sculpted appearance.</p>
-                                    </div>
-                                    <!-- <div class="mt-3">
-                                        <p><b>Meso-Glutathione & Peptides:</b></p>
-                                        <p>Fights oxidative stress and pigmentation for a healthy glow.</p>
-                                    </div> -->
-                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="mt-5">
-                        <div class="row g-0">
-                            <div class="col=lg-4 col-md-5 col-12">
-                                <div class="form c-f">
-                                    <h5 class="text-center gft">
-                                        Time for a Makeover?</h5>
-                                    <form action="">
-                                        <div class="mb-4">
-                                            <input type="text" class="form-control" placeholder="Name" required>
-                                        </div>
-                                        <div class="mb-4">
-                                            <input type="text" class="form-control" placeholder="Phone Number" required>
-                                        </div>
-                                        <div class="mb-4">
-                                            <input type="email" class="form-control" placeholder="Email" required>
-                                        </div>
 
-                                        <div class="mb-4">
-                                            <select class="form-select form-select-sm" aria-label="Small select example"
-                                                required>
-                                                <option selected value="">Concern</option>
-                                                <option value="Hair">Hair</option>
-                                                <option value="Skin">Skin</option>
-                                                <option value="Laser">Laser</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-4">
-                                            <textarea class="form-control" rows="1" placeholder="Message"
-                                                required></textarea>
-                                        </div>
-                                        <div class="mb-4">
-                                            <div class="">
-                                                <button type="submit" class="view-btn"
-                                                    >Step Into
-                                                    Beauty</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col=lg-8 col-md-7 col-12">
-                                <div class="srv-img">
-                                    <img src="assets/img/laser.png" alt="" class="img-fluid">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
-
-
-                <div class="second mt-5">
-                    <div class="green-pata">
-                        <img src="assets/img/greeen-pata.webp" alt="">
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">
+                    <div class="side-green-patta">
+                        <img src="assets/img/side-green-patta.webp" alt="" class="img-fluid">
                     </div>
                     <div class="container">
+                        <h2>Our Fundamental Ideas and Cutting-edge Technologies</h2>
                         <div class="row">
                             <div class="col-lg-5 col-md-5 col-12 mx-auto">
                                 <div class="frd">
                                     <div class="one">
-                                        05
+                                        01
                                     </div>
-                                    <h6>Environmental Shield<br>
-                                         & Age Defence</h6>
+                                    <h6>Skin Revitalisation & <br>
+                                        Cellular Boost</h6>
                                     <div class="grn-box">
                                         <p class="priv"><b>Principle:</b></p>
-                                        <p>Protect skin from environmental stressors and ageing factors for long-term well-being.</p>
+                                        <p>We stimulate your skin's own energy to renew and repair, not simply mask
+                                            imperfections.</p>
                                     </div>
                                     <div class="grn-box">
                                         <p class="priv"><b>Technologies & Tools:</b></p>
                                         <div class="mt-3">
-                                            <p><b>Astaxanthin Serum Blends:</b></p>
-                                            <p>Neutralise oxidative stress to inhibit signs of ageing.</p>
+                                            <p><b>Vita-Pulse Therapy:</b></p>
+                                            <p>Stimulates cell renewal and smoothes blemishes using micro-vibrations.
+                                            </p>
                                         </div>
                                         <div class="mt-3">
-                                            <p><b>UV-Defence Actives:</b></p>
-                                            <p>Strengthen skin against sun damage and pollution.</p>
+                                            <p><b>Regen-Cell Activators:</b></p>
+                                            <p>Implant bioactive ingredients to restore and revitalise skin.</p>
                                         </div>
-                                        <!-- <div class="mt-3">
-                                            <p><b>Meso-Glutathione & Peptides:</b></p>
-                                            <p>Fights oxidative stress and pigmentation for a healthy glow.</p>
-                                        </div> -->
+                                        <div class="mt-3">
+                                            <p><b>Pro-Collagen Serums:</b></p>
+                                            <p>Stimulate elasticity to soften fine lines and revive vitality.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-lg-5 col-md-5 col-12 mx-auto">
                                 <div class="frd">
                                     <div class="one">
-                                        06
+                                        02
                                     </div>
-                                    <h6>Korean-Inspired<br>
-                                        Radiance Ceremonies</h6>
+                                    <h6>Moisture Surge & <br>
+                                        Barrier Restoration</h6>
                                     <div class="grn-box">
                                         <p class="priv"><b>Principle:</b></p>
-                                        <p>Combine clinical precision with luxurious care for radiant results.</p>
+                                        <p>Hydrated skin glows with strength and youth.</p>
                                     </div>
                                     <div class="grn-box">
                                         <p class="priv"><b>Technologies & Tools:</b></p>
                                         <div class="mt-3">
-                                            <p><b>Crystal Essence Facials:</b></p>
-                                            <p>Korean-inspired infusions for clarity and luminescence.</p>
+                                            <p><b>Hydra-Flow System:</b></p>
+                                            <p>Provides nutrient-rich water for immediate plumpness and radiance.</p>
                                         </div>
                                         <div class="mt-3">
-                                            <p><b>Herbal Harmony Ampoules:</b></p>
-                                            <p>Plant-based actives suited to your skin's needs.</p>
+                                            <p><b>Ceramide Micro-Infusions:</b></p>
+                                            <p>Strengthen the skin barrier with its protective lipids.</p>
                                         </div>
                                         <!-- <div class="mt-3">
+                                        <p><b>Meso-Glutathione & Peptides:</b></p>
+                                        <p>Fights oxidative stress and pigmentation for a healthy glow.</p>
+                                    </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-12 mx-auto">
+                                <div class="frd">
+                                    <div class="one">
+                                        03
+                                    </div>
+                                    <h6>Precision Tone & <br>
+                                        Clarity Enhancement</h6>
+                                    <div class="grn-box">
+                                        <p class="priv"><b>Principle:</b></p>
+                                        <p>Targeted treatments balance tone without disturbing healthy skin.</p>
+                                    </div>
+                                    <div class="grn-box">
+                                        <p class="priv"><b>Technologies & Tools:</b></p>
+                                        <div class="mt-3">
+                                            <p><b>Prisma-Laser Therapy:</b></p>
+                                            <p>Corrects discolouration and redness with targeted light waves.</p>
+                                        </div>
+                                        <div class="mt-3">
+                                            <p><b>Green Light Calming Therapy:</b></p>
+                                            <p>Calms irritation and evens complexion for clarity.</p>
+                                        </div>
+                                        <!-- <div class="mt-3">
+                                        <p><b>Meso-Glutathione & Peptides:</b></p>
+                                        <p>Fights oxidative stress and pigmentation for a healthy glow.</p>
+                                    </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 col-md-5 col-12 mx-auto">
+                                <div class="frd">
+                                    <div class="one">
+                                        04
+                                    </div>
+                                    <h6>Non-Invasive <br>
+                                        Sculpting & Tightening</h6>
+                                    <div class="grn-box">
+                                        <p class="priv"><b>Principle:</b></p>
+                                        <p>Restore youthful contours gently, without invasive methods.</p>
+                                    </div>
+                                    <div class="grn-box">
+                                        <p class="priv"><b>Technologies & Tools:</b></p>
+                                        <div class="mt-3">
+                                            <p><b>Sonic-Sculpt Technology:</b></p>
+                                            <p>Firms and lifts sagging skin by using sonic energy.</p>
+                                        </div>
+                                        <div class="mt-3">
+                                            <p><b>Thermal-Fusion Pads:</b></p>
+                                            <p>Promote collagen for a more youthful, sculpted appearance.</p>
+                                        </div>
+                                        <!-- <div class="mt-3">
+                                        <p><b>Meso-Glutathione & Peptides:</b></p>
+                                        <p>Fights oxidative stress and pigmentation for a healthy glow.</p>
+                                    </div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <div class="row g-0">
+                                <div class="col=lg-4 col-md-5 col-12">
+                                    <div class="form c-f">
+                                        <h5 class="text-center gft">
+                                            Time for a Makeover?</h5>
+                                        <form action="">
+                                            <div class="mb-4">
+                                                <input type="text" class="form-control" placeholder="Name" required>
+                                            </div>
+                                            <div class="mb-4">
+                                                <input type="text" class="form-control" placeholder="Phone Number"
+                                                    required>
+                                            </div>
+                                            <div class="mb-4">
+                                                <input type="email" class="form-control" placeholder="Email" required>
+                                            </div>
+
+                                            <div class="mb-4">
+                                                <select class="form-select form-select-sm"
+                                                    aria-label="Small select example" required>
+                                                    <option selected value="">Concern</option>
+                                                    <option value="Hair">Hair</option>
+                                                    <option value="Skin">Skin</option>
+                                                    <option value="Laser">Laser</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-4">
+                                                <textarea class="form-control" rows="1" placeholder="Message"
+                                                    required></textarea>
+                                            </div>
+                                            <div class="mb-4">
+                                                <div class="">
+                                                    <button type="submit" class="view-btn">Step Into
+                                                        Beauty</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col=lg-8 col-md-7 col-12">
+                                    <div class="srv-img">
+                                        <img src="assets/img/laser.png" alt="" class="img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="second mt-5">
+                        <div class="green-pata">
+                            <img src="assets/img/greeen-pata.webp" alt="">
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-12 mx-auto">
+                                    <div class="frd">
+                                        <div class="one">
+                                            05
+                                        </div>
+                                        <h6>Environmental Shield<br>
+                                            & Age Defence</h6>
+                                        <div class="grn-box">
+                                            <p class="priv"><b>Principle:</b></p>
+                                            <p>Protect skin from environmental stressors and ageing factors for
+                                                long-term well-being.</p>
+                                        </div>
+                                        <div class="grn-box">
+                                            <p class="priv"><b>Technologies & Tools:</b></p>
+                                            <div class="mt-3">
+                                                <p><b>Astaxanthin Serum Blends:</b></p>
+                                                <p>Neutralise oxidative stress to inhibit signs of ageing.</p>
+                                            </div>
+                                            <div class="mt-3">
+                                                <p><b>UV-Defence Actives:</b></p>
+                                                <p>Strengthen skin against sun damage and pollution.</p>
+                                            </div>
+                                            <!-- <div class="mt-3">
+                                            <p><b>Meso-Glutathione & Peptides:</b></p>
+                                            <p>Fights oxidative stress and pigmentation for a healthy glow.</p>
+                                        </div> -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-12 mx-auto">
+                                    <div class="frd">
+                                        <div class="one">
+                                            06
+                                        </div>
+                                        <h6>Korean-Inspired<br>
+                                            Radiance Ceremonies</h6>
+                                        <div class="grn-box">
+                                            <p class="priv"><b>Principle:</b></p>
+                                            <p>Combine clinical precision with luxurious care for radiant results.</p>
+                                        </div>
+                                        <div class="grn-box">
+                                            <p class="priv"><b>Technologies & Tools:</b></p>
+                                            <div class="mt-3">
+                                                <p><b>Crystal Essence Facials:</b></p>
+                                                <p>Korean-inspired infusions for clarity and luminescence.</p>
+                                            </div>
+                                            <div class="mt-3">
+                                                <p><b>Herbal Harmony Ampoules:</b></p>
+                                                <p>Plant-based actives suited to your skin's needs.</p>
+                                            </div>
+                                            <!-- <div class="mt-3">
                                             <p><b>Custom Serums & Ampoules:</b></p>
                                             <p>Imported Korean products formulated for layering and customised infusions.</p>
                                         </div> -->
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-5 col-md-5 col-12 mx-auto">
-                                <div class="frd">
-                                    <div class="one">
-                                        07
-                                    </div>
-                                    <h6>Tailored, Data - <br>
-                                        Driven Skin Insights</h6>
-                                    <div class="grn-box">
-                                        <p class="priv"><b>Principle:</b></p>
-                                        <p>Your skin needs a personalised medi-facial therapy, unlike someone else's.</p>
-                                    </div>
-                                    <div class="grn-box">
-                                        <p class="priv"><b>Technologies & Tools:</b></p>
-                                        <div class="mt-3">
-                                            <p><b>Next-Gen Skin Scanning:</b></p>
-                                            <p>Maps tone, texture, and resilience for targeted care.</p>
+                                <div class="col-lg-5 col-md-5 col-12 mx-auto">
+                                    <div class="frd">
+                                        <div class="one">
+                                            07
                                         </div>
-                                        <div class="mt-3">
-                                            <p><b>Adaptive Care Protocols:</b></p>
-                                            <p>Adapt with your skin's individual journey and objectives.</p>
+                                        <h6>Tailored, Data - <br>
+                                            Driven Skin Insights</h6>
+                                        <div class="grn-box">
+                                            <p class="priv"><b>Principle:</b></p>
+                                            <p>Your skin needs a personalised medi-facial therapy, unlike someone
+                                                else's.</p>
                                         </div>
-                                        <!-- <div class="mt-3">
+                                        <div class="grn-box">
+                                            <p class="priv"><b>Technologies & Tools:</b></p>
+                                            <div class="mt-3">
+                                                <p><b>Next-Gen Skin Scanning:</b></p>
+                                                <p>Maps tone, texture, and resilience for targeted care.</p>
+                                            </div>
+                                            <div class="mt-3">
+                                                <p><b>Adaptive Care Protocols:</b></p>
+                                                <p>Adapt with your skin's individual journey and objectives.</p>
+                                            </div>
+                                            <!-- <div class="mt-3">
                                             <p><b>Meso-Glutathione & Peptides:</b></p>
                                             <p>Fights oxidative stress and pigmentation for a healthy glow.</p>
                                         </div> -->
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-5 col-md-5 col-12 mx-auto">
-                                <div class="frd">
-                                    <img src="assets/img/skinm.webp" alt="" class="img-fluid">
+                                <div class="col-lg-5 col-md-5 col-12 mx-auto">
+                                    <div class="frd">
+                                        <img src="assets/img/skinm.webp" alt="" class="img-fluid">
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-        </div>
+            </div>
     </section>
 
     <section class="promise">
@@ -1059,7 +1085,7 @@
                     <h3>Contact Us</h3>
                     <div class="d-flex mt-3">
                         <img src="assets/img/location1.png" alt="" class="me-2 imhg">
-                        <p id="btd">F-138, Spaze Corporate Parkk, Sector 69,<br>
+                        <p id="btd">F-138, Spaze Corporate Park, Sector 69,<br>
                             Gurugram - 122006, Haryana.</p>
                     </div>
                     <div class="d-flex mt-2">
@@ -1097,119 +1123,122 @@
         </div>
     </section>
 
-      <aside class="contact-icons">
-    <!-- WhatsApp Link -->
-    <a href="https://wa.me/918888888888" target="_blank" title="Chat on WhatsApp" class="icon whatsapp">
-      <i class="fab fa-whatsapp fa-lg"></i>
-    </a>
+    <aside class="contact-icons">
+        <!-- WhatsApp Link -->
+        <a href="https://wa.me/918888888888" target="_blank" title="Chat on WhatsApp" class="icon whatsapp">
+            <i class="fab fa-whatsapp fa-lg"></i>
+        </a>
 
-    <!-- Phone Call Link -->
-    <a href="tel:+918888888888" title="Call Us" class="icon phone">
-      <i class="fas fa-phone"></i>
-    </a>
-  </aside>
-
-
-   <!-- Sticky Footer -->
-<div class="sticky-footer-icons">
-  <div class="footer-icons-wrap">
-    
-    <!-- WhatsApp -->
-    <a href="https://wa.me/918888888888" target="_blank" title="WhatsApp" class="footer-btn">
-      <img src="assets/img/whatsapp1.png" alt="WhatsApp">
-    </a>
-
-    <!-- Call -->
-    <a href="tel:+918888888888" title="Call" class="footer-btn">
-      <img src="assets/img/call.png" alt="Call">
-    </a>
-
-    <!-- Book Appointment (Triggers Modal) -->
-    <button type="button" title="Book Appointment" class="footer-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-      <img src="assets/img/direct.png" alt="Message">
-    </button>
-
-  </div>
-</div>
+        <!-- Phone Call Link -->
+        <a href="tel:+918888888888" title="Call Us" class="icon phone">
+            <i class="fas fa-phone"></i>
+        </a>
+    </aside>
 
 
-  <!-- Modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-    aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <!-- Sticky Footer -->
+    <div class="sticky-footer-icons">
+        <div class="footer-icons-wrap">
 
-    <div class="modal-content shadow-lg" style="max-width: 1400px;">
+            <!-- WhatsApp -->
+            <a href="https://wa.me/918888888888" target="_blank" title="WhatsApp" class="footer-btn">
+                <img src="assets/img/whatsapp1.png" alt="WhatsApp">
+            </a>
 
-      <div class="modal-body p-0 bg-white position-relative"
-        style="background: linear-gradient(0deg, rgba(255, 255, 244, 1) 0%, rgba(231, 251, 202, 1) 80%);">
+            <!-- Call -->
+            <a href="tel:+918888888888" title="Call" class="footer-btn">
+                <img src="assets/img/call.png" alt="Call">
+            </a>
 
-        <!-- Close Button -->
-        <button type="button" 
-        class="btn-close custom-close position-absolute top-0 end-0 m-3" 
-        data-bs-dismiss="modal" 
-        aria-label="Close"></button>
+            <!-- Book Appointment (Triggers Modal) -->
+            <button type="button" title="Book Appointment" class="footer-btn" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                <img src="assets/img/direct.png" alt="Message">
+            </button>
 
-        <div class="row g-0">
-
-          <div class="col-lg-6 d-none d-lg-block">
-            <img src="./assets/img/popimg.webp" alt="Banner" class="img-fluid h-100 w-100 object-fit-cover">
-          </div>
-
-          <div class="col-lg-6 col-12 d-flex flex-column">
-
-            <!-- Heading -->
-            <div class="text-center py-3 px-3  mt-3">
-              <h2 class="mt-2 mb-0 fs-4 fw-bold">
-                Your Aesthetic Journey Awaits!
-              </h2>
-            </div>
-
-            <!-- Form Body -->
-            <div class="px-3 px-md-4 py-4 flex-grow-1 d-flex align-items-center position-relative">
-              <form class="w-100 z-1">
-                <div class="row g-3">
-
-                  <div class="col-12">
-                    <input type="text" class="form-control rounded-3 shadow-sm py-2" placeholder="Name" required>
-                  </div>
-
-                  <div class="col-12">
-                    <input type="text" class="form-control rounded-3 shadow-sm py-2" placeholder="Phone Number"
-                      pattern="[6-9][0-9]{9}" required>
-                  </div>
-
-                  <div class="col-12">
-                    <input type="email" class="form-control rounded-3 shadow-sm py-2" placeholder="Email" required>
-                  </div>
-
-                  <div class="col-12">
-                    <select class="form-select rounded-3 shadow-sm py-2" required>
-                      <option selected value="">Concern</option>
-                      <option value="Hair">Hair</option>
-                      <option value="Skin">Skin</option>
-                      <option value="Laser">Laser</option>
-                    </select>
-                  </div>
-
-                  <div class="col-12">
-                    <textarea class="form-control rounded-3 shadow-sm py-2" rows="2" placeholder="Message"
-                      required></textarea>
-                  </div>
-
-                  <div class="col-12">
-                    <button type="submit" class="view-btn w-100 pop-text">Step Into Beauty</button>
-                  </div>
-
-                </div>
-              </form>
-            </div>
-          </div>
-
-        </div> <!-- row end -->
-      </div>
+        </div>
     </div>
-  </div>
-</div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+
+            <div class="modal-content shadow-lg" style="max-width: 1400px;">
+
+                <div class="modal-body p-0 bg-white position-relative"
+                    style="background: linear-gradient(0deg, rgba(255, 255, 244, 1) 0%, rgba(231, 251, 202, 1) 80%);">
+
+                    <!-- Close Button -->
+                    <button type="button" class="btn-close custom-close position-absolute top-0 end-0 m-3"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    <div class="row g-0">
+
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <img src="./assets/img/popimg.webp" alt="Banner"
+                                class="img-fluid h-100 w-100 object-fit-cover">
+                        </div>
+
+                        <div class="col-lg-6 col-12 d-flex flex-column">
+
+                            <!-- Heading -->
+                            <div class="text-center py-3 px-3  mt-3">
+                                <h2 class="mt-2 mb-0 fs-4 fw-bold">
+                                    Your Aesthetic Journey Awaits!
+                                </h2>
+                            </div>
+
+                            <!-- Form Body -->
+                            <div class="px-3 px-md-4 py-4 flex-grow-1 d-flex align-items-center position-relative">
+                                <form class="w-100 z-1">
+                                    <div class="row g-3">
+
+                                        <div class="col-12">
+                                            <input type="text" class="form-control rounded-3 shadow-sm py-2"
+                                                placeholder="Name" required>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <input type="text" class="form-control rounded-3 shadow-sm py-2"
+                                                placeholder="Phone Number" pattern="[6-9][0-9]{9}" required>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <input type="email" class="form-control rounded-3 shadow-sm py-2"
+                                                placeholder="Email" required>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <select class="form-select rounded-3 shadow-sm py-2" required>
+                                                <option selected value="">Concern</option>
+                                                <option value="Hair">Hair</option>
+                                                <option value="Skin">Skin</option>
+                                                <option value="Laser">Laser</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <textarea class="form-control rounded-3 shadow-sm py-2" rows="2"
+                                                placeholder="Message" required></textarea>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <button type="submit" class="view-btn w-100 pop-text">Step Into
+                                                Beauty</button>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div> <!-- row end -->
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
